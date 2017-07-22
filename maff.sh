@@ -1,5 +1,5 @@
 #!/bin/bash
-SCRIPTDIR=$(dirname "$0")
+SCRIPTDIR=$(dirname "$(readlink -f $0)")
 
 PATH=$SCRIPTDIR/bin/wget-1.17-win32:$PATH
 PATH=$SCRIPTDIR/bin/7z-9.20:$PATH
